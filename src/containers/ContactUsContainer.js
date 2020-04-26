@@ -5,29 +5,33 @@ import ContactUsComponent from "../components/ContactUs";
 class ContactUsContainer extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      response: [],
+    };
   }
 
   submitHandler = (answers) => {
     axios
       .post(
         "https://interview-assessment.api.avamae.co.uk/api/v1/contact-us/submit",
-        {
-          answers,
-        }
+        answers
       )
-      .then(
-        (response) => {
-          console.log(response);
-        },
-        (error) => {
-          console.log(error);
-        }
-      );
+      .then((response) => {
+        console.log(response);
+        this.setState({ response });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   render() {
-    return <ContactUsComponent submitHandler={this.submitHandler} />;
+    return (
+      <ContactUsComponent
+        submitHandler={this.submitHandler}
+        response={this.state.response}
+      />
+    );
   }
 }
 
