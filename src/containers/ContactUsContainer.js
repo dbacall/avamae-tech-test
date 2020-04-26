@@ -8,8 +8,26 @@ class ContactUsContainer extends Component {
     this.state = {};
   }
 
+  submitHandler = (answers) => {
+    axios
+      .post(
+        "https://interview-assessment.api.avamae.co.uk/api/v1/contact-us/submit",
+        {
+          answers,
+        }
+      )
+      .then(
+        (response) => {
+          console.log(response);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+  };
+
   render() {
-    return <ContactUsComponent />;
+    return <ContactUsComponent submitHandler={this.submitHandler} />;
   }
 }
 
