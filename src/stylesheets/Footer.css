@@ -1,0 +1,15 @@
+.footer {
+  border-top: 1px solid lightgray;
+  width: 95vw;
+  margin: auto;
+}
+
+#footer-i {
+  float: right;
+  margin: 1.5% 3%;
+  color: lightgray;
+}
+
+#footer-i a {
+  color: lightgray;
+}
