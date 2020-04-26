@@ -5,7 +5,7 @@ import Logo from "../assets/Logo.svg";
 
 export const Navbar = () => {
   return (
-    <ul className="nav-ul">
+    <ul className="nav-ul mobile-header">
       <img src={Logo} className="logo" alt="logo" />
       <div className="nav-btns">
         <li key="login">
