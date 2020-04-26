@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import logo from "./logo.svg";
-import Home from "./components/Home";
+import HomeContainer from "./containers/HomeContainer";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
 
@@ -17,7 +17,7 @@ class App extends Component {
       <Router>
         <Navbar />
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={HomeContainer} />
           <Route path="/about-us" component={AboutUs} />
           <Route path="/contact-us" component={ContactUs} />
         </Switch>

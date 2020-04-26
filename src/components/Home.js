@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../stylesheets/Home.css";
 // import "react-id-swiper/lib/styles/css/swiper.css";
 import Swiper from "react-id-swiper";
+import ReactLoading from "react-loading";
 
 const params = {
   pagination: {
@@ -12,15 +13,29 @@ const params = {
 };
 
 class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
   render() {
     return (
-      <Swiper {...params}>
-        <div>Slide #1</div>
-        <div>Slide #2</div>
-        <div>Slide #3</div>
-        <div>Slide #4</div>
-        <div>Slide #5</div>
-      </Swiper>
+      <>
+        {this.props.bannerData.length === 0 ? (
+          <ReactLoading type={"spin"} height={667} width={375} />
+        ) : (
+          <Swiper {...params}>
+            {this.props.bannerData.map((item) => {
+              return (
+                <div>
+                  <h3>{item.Title}</h3>
+                  <h5>{item.Subtitle}</h5>
+                  <img src={item.ImageUrl} className={"banner-img"} />
+                </div>
+              );
+            })}
+          </Swiper>
+        )}
+      </>
     );
   }
 }
