@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "../stylesheets/ContactUs.css";
 import BackgroundLogo from "../assets/Img_Contact.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 class ContactUs extends Component {
   constructor(props) {
@@ -209,7 +211,14 @@ class ContactUs extends Component {
               <input type="submit" value="Submit" className="form-btn" />
             </form>
           ) : this.props.response.data.Status === "1" ? (
-            <h1>Your message has been sent</h1>
+            <div className="confirmation-container">
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                className="confirmation-logo"
+              />
+              <h3>Your message has been sent</h3>
+              <p>We will be in contact with you within 24 hours</p>
+            </div>
           ) : null}
         </div>
       </div>
