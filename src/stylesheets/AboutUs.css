@@ -1,3 +1,29 @@
-.office-img {
-  height: 100px;
+.about-us-container {
+  width: 75vw;
+  margin: auto;
+  color: gray;
+}
+
+.about-us-title {
+  margin: 6% 0 0 0;
+}
+
+.about-us-container p {
+  font-size: 13px;
+}
+
+.about-us-container img {
+  width: 60%;
+  border-radius: 3px;
+  margin: 1% 0;
+}
+
+.about-us-img {
+  text-align: center;
+}
+
+.about-us-container ul {
+  font-size: 13px;
+  margin-left: -2%;
+  font-weight: bold;
 }

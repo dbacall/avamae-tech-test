@@ -5,17 +5,21 @@ import OfficeImg from "../assets/shutterstock_696636415.jpg";
 class AboutUs extends Component {
   render() {
     return (
-      <div>
-        <h3>About Us</h3>
+      <div className="about-us-container">
+        <h3 className="about-us-title">About Us</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          luctus hendrerit augue consectetur tempus. Etiam eget lacus augue.
-          Integer quis leo dapibus, aliquam urna non, tempus purus. Nam rhoncus,
-          magna sed egestas blandit, nisl est placerat mi, id condimentum sem
-          elit sed purus. Aenean faucibus neque eu ante dapibus, ullamcorper
-          finibus risus porttitor. Proin condimentum luctus tellus et tincidunt.
-          Nulla dignissim, nisi vel rutrum convallis, risus nunc feugiat nunc,
-          non volutpat arcu sem vel magna.
+          <b>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            luctus hendrerit augue consectetur tempus.
+          </b>{" "}
+          <br />
+          Etiam eget lacus augue. Integer quis leo dapibus, aliquam urna non,
+          tempus purus. Nam rhoncus, magna sed egestas blandit, nisl est
+          placerat mi, id condimentum sem elit sed purus. Aenean faucibus neque
+          eu ante dapibus, ullamcorper finibus risus porttitor. Proin
+          condimentum luctus tellus et tincidunt.{" "}
+          <a href="/">Nulla dignissim, nisi vel rutrum</a> convallis, risus nunc
+          feugiat nunc, non volutpat arcu sem vel magna.
         </p>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -27,7 +31,9 @@ class AboutUs extends Component {
           Nulla dignissim, nisi vel rutrum convallis, risus nunc feugiat nunc,
           non volutpat arcu sem vel magna.
         </p>
-        <img src={OfficeImg} alt="Office" className="office-img" />
+        <div className="about-us-img">
+          <img src={OfficeImg} alt="Office" className="office-img" />
+        </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           luctus hendrerit augue consectetur tempus. Etiam eget lacus augue.
