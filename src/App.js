@@ -5,7 +5,7 @@ import { Navbar } from "./components/Navbar";
 import logo from "./logo.svg";
 import HomeContainer from "./containers/HomeContainer";
 import AboutUs from "./components/AboutUs";
-import ContactUs from "./components/ContactUs";
+import ContactUsContainer from "./containers/ContactUsContainer";
 
 {
   /* <img src={logo} className="App-logo" alt="logo" /> */
@@ -19,7 +19,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={HomeContainer} />
           <Route path="/about-us" component={AboutUs} />
-          <Route path="/contact-us" component={ContactUs} />
+          <Route path="/contact-us" component={ContactUsContainer} />
         </Switch>
         <h1>Footer</h1>
       </Router>

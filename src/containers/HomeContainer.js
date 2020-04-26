@@ -26,13 +26,6 @@ class HomeContainer extends Component {
       });
   }
 
-  // componentDidUpdate(prevProps, prevState) {
-
-  //   if(!this.state.medicationList && this.props.medicationList && this.props.medicationList.data){
-  //     this.setState({medicationList: this.props.medicationList.data})
-  //   }
-  // }
-
   render() {
     return <HomeComponent bannerData={this.state.bannerData} />;
   }
