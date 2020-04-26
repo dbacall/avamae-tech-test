@@ -1,0 +1,44 @@
+.contact-us {
+  height: 100vh;
+}
+
+.contact-us-container {
+  width: 40vw;
+  margin: 0 10vw;
+  color: gray;
+  font-size: 13px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: rgb(245, 244, 244);
+}
+
+.inputs-4 {
+  width: 90%;
+}
+
+.form-btn {
+  width: 100%;
+  text-decoration: none;
+  background-color: rgba(47, 144, 201, 0.8);
+  border-radius: 3px;
+  padding: 2.5% 5%;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.warning {
+  color: red;
+}
