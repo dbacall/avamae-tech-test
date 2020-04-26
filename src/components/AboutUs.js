@@ -32,7 +32,7 @@ class AboutUs extends Component {
           non volutpat arcu sem vel magna.
         </p>
         <div className="about-us-img">
-          <img src={OfficeImg} alt="Office" className="office-img" />
+          <img src={OfficeImg} alt="Office" className="office-about-us-img" />
         </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
