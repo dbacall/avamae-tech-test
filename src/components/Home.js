@@ -98,7 +98,7 @@ class Home extends Component {
         </div>
         <div className="container3">
           <div className="container3-titles">
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+            <h3>Lorem ipsum dolor sit amet, con adi piscing elit</h3>
             <h5>Aenean faucibus neque eu ante dapibus</h5>
           </div>
           <p className="container3-paras">

@@ -170,4 +170,69 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .banner-info {
+    width: 85%;
+    left: 8%;
+  }
+  .banner-img {
+    height: 60vh;
+    width: auto;
+    margin-left: -20%;
+  }
+  .btn-1 {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-right: 0;
+  }
+  .container1 {
+    height: 130vh;
+    flex-direction: column-reverse;
+    /* display: inline-block; */
+    justify-content: start;
+  }
+  .flex-item {
+    height: 50%;
+    width: 95vw;
+    margin: auto;
+  }
+  .flex-title {
+    margin-top: -25%;
+  }
+  .office-img {
+    margin-bottom: -10%;
+  }
+  .btn-2 {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .container2-info {
+    height: 90%;
+    width: 95vw;
+    left: 2.5%;
+    top: 5%;
+  }
+  .btn-3 {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .container3 {
+    height: 130vh;
+  }
+  .container3-titles {
+    width: 90vw;
+  }
+  .container3-paras {
+    column-count: 1;
+    width: 90vw;
+  }
+  .btn-4 {
+    width: 90vw;
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 3% 0;
+  }
 }
