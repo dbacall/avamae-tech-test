@@ -1,9 +1,73 @@
 import React, { Component } from "react";
 import "../stylesheets/AboutUs.css";
+import OfficeImg from "../assets/shutterstock_696636415.jpg";
 
 class AboutUs extends Component {
   render() {
-    return <h1>About Us</h1>;
+    return (
+      <div>
+        <h3>About Us</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          luctus hendrerit augue consectetur tempus. Etiam eget lacus augue.
+          Integer quis leo dapibus, aliquam urna non, tempus purus. Nam rhoncus,
+          magna sed egestas blandit, nisl est placerat mi, id condimentum sem
+          elit sed purus. Aenean faucibus neque eu ante dapibus, ullamcorper
+          finibus risus porttitor. Proin condimentum luctus tellus et tincidunt.
+          Nulla dignissim, nisi vel rutrum convallis, risus nunc feugiat nunc,
+          non volutpat arcu sem vel magna.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          luctus hendrerit augue consectetur tempus. Etiam eget lacus augue.
+          Integer quis leo dapibus, aliquam urna non, tempus purus. Nam rhoncus,
+          magna sed egestas blandit, nisl est placerat mi, id condimentum sem
+          elit sed purus. Aenean faucibus neque eu ante dapibus, ullamcorper
+          finibus risus porttitor. Proin condimentum luctus tellus et tincidunt.
+          Nulla dignissim, nisi vel rutrum convallis, risus nunc feugiat nunc,
+          non volutpat arcu sem vel magna.
+        </p>
+        <img src={OfficeImg} alt="Office" className="office-img" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          luctus hendrerit augue consectetur tempus. Etiam eget lacus augue.
+          Integer quis leo dapibus, aliquam urna non, tempus purus. Nam rhoncus,
+          magna sed egestas blandit, nisl est placerat mi, id condimentum sem
+          elit sed purus. Aenean faucibus neque eu ante dapibus, ullamcorper
+          finibus risus porttitor. Proin condimentum luctus tellus et tincidunt.
+          Nulla dignissim, nisi vel rutrum convallis, risus nunc feugiat nunc,
+          non volutpat arcu sem vel magna.
+        </p>
+        <h3>Integer quis leo dapibus, aliquam urna:</h3>
+        <ul>
+          <li key="1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </li>
+          <li key="2">Duis vehicula erat ut ornare vulputate.</li>
+          <li key="3">Duis molestie tortor eu porttitor tristique.</li>
+          <li key="4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </li>
+        </ul>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          luctus hendrerit augue consectetur tempus. Etiam eget lacus augue.
+          Integer quis leo dapibus, aliquam urna non, tempus purus. Nam rhoncus,
+          magna sed egestas blandit, nisl est placerat mi, id condimentum sem
+          elit sed purus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          luctus hendrerit augue consectetur tempus. Etiam eget lacus augue.
+          Integer quis leo dapibus, aliquam urna non, tempus purus. Nam rhoncus,
+          magna sed egestas blandit, nisl est placerat mi, id condimentum sem
+          elit sed purus. Aenean faucibus neque eu ante dapibus, ullamcorper
+          finibus risus porttitor. Proin condimentum luctus tellus et tincidunt.
+          Nulla dignissim, nisi vel rutrum convallis, risus nunc feugiat nunc,
+          non volutpat arcu sem vel magna.
+        </p>
+      </div>
+    );
   }
 }
 
