@@ -2,19 +2,16 @@
   box-sizing: border-box;
 }
 
-ul {
+.nav-ul {
   position: static;
-  display: inline;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: white;
-  display: inline;
 }
 
-li a {
-  display: block;
+.nav-li {
   color: black;
   text-align: center;
   padding: 1%;
@@ -23,7 +20,7 @@ li a {
   font-size: 13px;
 }
 
-li a:hover:not(.active) {
+.nav-li:hover:not(.active) {
   color: gray;
 }
 
@@ -36,10 +33,11 @@ li a:hover:not(.active) {
 
 #login {
   margin-right: 20%;
+  margin-top: 0.5%;
   background-color: lightblue;
   opacity: 0.5;
   border-radius: 3px;
-  padding: 1% 2%;
+  padding: 0.5% 2%;
   font-weight: bold;
   color: darkblue;
 }
