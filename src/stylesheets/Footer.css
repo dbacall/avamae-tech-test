@@ -2,6 +2,10 @@
   border-top: 1px solid lightgray;
   width: 95vw;
   margin: auto;
+  margin-top: 3%;
+  position: relative;
+  height: 3%;
+  clear: both;
 }
 
 #footer-i {
@@ -12,4 +16,10 @@
 
 #footer-i a {
   color: lightgray;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    /* margin-top: 90%; */
+  }
 }
