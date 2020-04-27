@@ -80,7 +80,7 @@ class Home extends Component {
           </div>
         </div>
         <div className="container2">
-          <img src={WomanImg} className="banner-img" />
+          <img src={WomanImg} className="home-img" />
           <div className="container2-info">
             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
             <p>

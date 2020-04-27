@@ -36,6 +36,14 @@
   height: auto;
   width: 100vw;
   z-index: 0;
+  margin: -11% 0 0 0;
+}
+
+.home-img {
+  height: auto;
+  width: 100vw;
+  z-index: 0;
+  margin: -3% 0 0 0;
 }
 
 .container1 {
@@ -179,10 +187,22 @@
     width: 85%;
     left: 8%;
   }
+  .gradient {
+    background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 20%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  }
   .banner-img {
-    height: 60vh;
+    height: 70vh;
     width: auto;
-    margin-left: -40%;
+    margin-left: -55%;
+  }
+  .home-img {
+    height: 70vh;
+    width: auto;
+    margin-left: -55%;
   }
   .btn-1 {
     width: 100%;
