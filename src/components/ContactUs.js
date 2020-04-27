@@ -93,7 +93,7 @@ class ContactUs extends Component {
           {this.props.response.length === 0 ||
           this.props.response.data.Status === "0" ? (
             <form onSubmit={this.submitHandler}>
-              <div className="flex-container">
+              <div className="two-input-container">
                 <div>
                   <label for="fname">Full Name</label>
                   <input
@@ -166,7 +166,7 @@ class ContactUs extends Component {
               />
               {this.state.bIncludeAddressDetails ? (
                 <div className="address-details">
-                  <div className="flex-container">
+                  <div className="two-input-container">
                     <div>
                       <label for="fname">Address Line 1</label>
                       <input
@@ -188,51 +188,47 @@ class ContactUs extends Component {
                       />
                     </div>
                   </div>
-                  <div className="flex-container-2">
-                    <div className="flex-container-3">
-                      <div>
-                        <label for="fname">City/Town</label>
-                        <input
-                          type="text"
-                          className="input inputs-4"
-                          id="CityTown"
-                          onChange={this.onChange}
-                          value={this.state.CityTown}
-                        />
-                      </div>
-
-                      <div>
-                        <label for="fname">State/County</label>
-                        <input
-                          type="text"
-                          className="input inputs-4"
-                          id="StateCounty"
-                          onChange={this.onChange}
-                          value={this.state.StateCounty}
-                        />
-                      </div>
+                  <div className="four-input-container">
+                    <div>
+                      <label for="fname">City/Town</label>
+                      <input
+                        type="text"
+                        className="input inputs-4"
+                        id="CityTown"
+                        onChange={this.onChange}
+                        value={this.state.CityTown}
+                      />
                     </div>
-                    <div className="flex-container-3">
-                      <div>
-                        <label for="fname">Postcode</label>
-                        <input
-                          type="text"
-                          className="input inputs-4"
-                          id="Postcode"
-                          onChange={this.onChange}
-                          value={this.state.Postcode}
-                        />
-                      </div>
-                      <div>
-                        <label for="fname">Country</label>
-                        <input
-                          type="text"
-                          className="input inputs-4"
-                          id="Country"
-                          onChange={this.onChange}
-                          value={this.state.Country}
-                        />
-                      </div>
+
+                    <div>
+                      <label for="fname">State/County</label>
+                      <input
+                        type="text"
+                        className="input inputs-4"
+                        id="StateCounty"
+                        onChange={this.onChange}
+                        value={this.state.StateCounty}
+                      />
+                    </div>
+                    <div>
+                      <label for="fname">Postcode</label>
+                      <input
+                        type="text"
+                        className="input inputs-4"
+                        id="Postcode"
+                        onChange={this.onChange}
+                        value={this.state.Postcode}
+                      />
+                    </div>
+                    <div>
+                      <label for="fname">Country</label>
+                      <input
+                        type="text"
+                        className="input inputs-4"
+                        id="Country"
+                        onChange={this.onChange}
+                        value={this.state.Country}
+                      />
                     </div>
                   </div>
                 </div>
