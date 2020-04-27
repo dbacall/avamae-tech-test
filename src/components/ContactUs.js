@@ -80,7 +80,7 @@ class ContactUs extends Component {
 
   render() {
     return (
-      <div style={styles.backgroundLogo} className="contact-us">
+      <div className="contact-us">
         <div className="contact-us-container">
           <h1>Contact Us</h1>
           <p>
@@ -258,15 +258,5 @@ class ContactUs extends Component {
     );
   }
 }
-
-const styles = {
-  backgroundLogo: {
-    backgroundImage: `url(${BackgroundLogo})`,
-    backgroundRepeat: "no-repeat",
-    height: "100%",
-    backgroundPosition: "right",
-    height: "100vh",
-  },
-};
 
 export default ContactUs;

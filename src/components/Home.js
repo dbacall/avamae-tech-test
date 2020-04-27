@@ -46,7 +46,7 @@ class Home extends Component {
           </Swiper>
         )}
         <div className="container1">
-          <div className="flex-item">
+          <div className="flex-item-1">
             <h4 className="flex-title">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </h4>
@@ -75,7 +75,7 @@ class Home extends Component {
               Learn more
             </Link>
           </div>
-          <div className="flex-item">
+          <div className="flex-item-2">
             <img src={OfficeImg} alt="Office" className="office-img" />
           </div>
         </div>

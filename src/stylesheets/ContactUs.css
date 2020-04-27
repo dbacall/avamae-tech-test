@@ -1,5 +1,12 @@
 .contact-us {
-  height: 100vh;
+  /* height: 100vh; */
+  background-image: url("../assets/Img_Contact.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 35%;
+  height: 110vh;
+  overflow: auto;
+  background-position-x: 80%;
 }
 
 .contact-us-container {
