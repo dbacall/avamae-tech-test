@@ -50,6 +50,22 @@
   color: white;
 }
 
+.submit-logo {
+  float: left;
+  font-size: 15px;
+}
+
+#add-num-btn {
+  width: 100%;
+  text-decoration: none;
+  background-color: rgb(193, 227, 247);
+  border-radius: 3px;
+  padding: 2.5% 5%;
+  font-size: 10px;
+  font-weight: bold;
+  color: rgba(47, 144, 201);
+}
+
 .warning {
   color: red;
 }

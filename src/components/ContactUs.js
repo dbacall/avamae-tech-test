@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../stylesheets/ContactUs.css";
 import BackgroundLogo from "../assets/Img_Contact.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import { faCheckCircle, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 class ContactUs extends Component {
   constructor(props) {
@@ -11,6 +11,7 @@ class ContactUs extends Component {
       FullName: "",
       EmailAddress: "",
       PhoneNumber: "",
+      addNewNumber: false,
       PhoneNumber2: "",
       CompanyName: "",
       Message: "",
@@ -44,6 +45,13 @@ class ContactUs extends Component {
   submitHandler = (e) => {
     e.preventDefault();
     this.props.submitHandler(this.state);
+  };
+
+  clickHandler = (e) => {
+    e.preventDefault();
+    this.setState({
+      addNewNumber: true,
+    });
   };
 
   componentDidUpdate(prevProps, prevState) {
@@ -107,7 +115,7 @@ class ContactUs extends Component {
                   />
                 </div>
               </div>
-              <label for="fname">Phone Number - optional</label>
+              <label for="fname">Phone Number 01 - optional</label>
               <input
                 type="text"
                 className="input"
@@ -115,6 +123,21 @@ class ContactUs extends Component {
                 onChange={this.onChange}
                 value={this.state.PhoneNumber}
               />
+              {this.state.addNewNumber ? (
+                <>
+                  <label for="fname">Phone Number 02 - optional</label>
+                  <input
+                    type="text"
+                    className="input"
+                    id="PhoneNumber2"
+                    onChange={this.onChange}
+                    value={this.state.PhoneNumber2}
+                  />
+                </>
+              ) : null}
+              <button id="add-num-btn" onClick={this.clickHandler}>
+                Add new phone number
+              </button>
               <label for="fname">Company Name</label>
               <input
                 type="text"
@@ -215,7 +238,10 @@ class ContactUs extends Component {
                 </div>
               ) : null}
               <h5 className="warning">{this.state.errors}</h5>
-              <input type="submit" value="Submit" className="form-btn" />
+              <button className="form-btn">
+                <FontAwesomeIcon icon={faPaperPlane} className="submit-logo" />
+                Submit
+              </button>
             </form>
           ) : this.props.response.data.Status === "1" ? (
             <div className="confirmation-container">
