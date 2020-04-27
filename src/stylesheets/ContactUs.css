@@ -20,6 +20,10 @@
   column-count: 2;
 }
 
+textarea {
+  resize: none;
+}
+
 .four-input-container {
   column-count: 4;
 }
@@ -80,7 +84,7 @@
 
 @media only screen and (max-width: 600px) {
   .contact-us {
-    background-image: none !important;
+    background-image: none;
   }
   .contact-us-container {
     height: 100vh;
