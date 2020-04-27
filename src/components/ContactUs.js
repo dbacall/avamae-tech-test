@@ -58,9 +58,9 @@ class ContactUs extends Component {
     if (prevProps.response !== this.props.response) {
       this.setState({
         errors:
-          this.props.response.data.Errors.map((error) => error.FieldName).join(
-            ", "
-          ) + " is required!",
+          this.props.response.data.Errors.map((error) =>
+            error.FieldName.match(/[A-Z][a-z]+/g).join(" ")
+          ).join(", ") + " is required!",
       });
     }
   }
