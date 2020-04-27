@@ -51,6 +51,10 @@ textarea {
   outline: none;
 }
 
+.form-btn:hover {
+  cursor: pointer;
+}
+
 .submit-logo {
   float: left;
   font-size: 15px;
@@ -66,6 +70,10 @@ textarea {
   font-weight: bold;
   color: rgba(47, 144, 201);
   outline: none;
+}
+
+#add-num-btn:hover {
+  cursor: pointer;
 }
 
 .warning {
