@@ -48,6 +48,7 @@ textarea {
   font-size: 10px;
   font-weight: bold;
   color: white;
+  outline: none;
 }
 
 .submit-logo {
@@ -64,6 +65,7 @@ textarea {
   font-size: 10px;
   font-weight: bold;
   color: rgba(47, 144, 201);
+  outline: none;
 }
 
 .warning {
