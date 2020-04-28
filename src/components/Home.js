@@ -16,12 +16,7 @@ const params = {
 };
 
 class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
   render() {
-    console.log(OfficeImg);
     return (
       <div>
         {this.props.bannerData.length === 0 ? (
@@ -39,7 +34,7 @@ class Home extends Component {
                     </Link>
                   </div>
                   <div className="gradient"></div>
-                  <img src={item.ImageUrl} className={"banner-img"} />
+                  <img src={item.ImageUrl} className="banner-img" />
                 </div>
               );
             })}
@@ -57,7 +52,7 @@ class Home extends Component {
               et, consectetur commodo quam. In pharetra scelerisque dui, nec
               dapibus urna ornare quis.
             </p>
-            <ul className="flex-list">
+            <ul className="flex-ul">
               <li className="home-li" key="1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </li>
@@ -71,7 +66,7 @@ class Home extends Component {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </li>
             </ul>
-            <Link to="/about-us" className="btn-2">
+            <Link to="/about-us" className="btn-1">
               Learn more
             </Link>
           </div>
@@ -91,7 +86,7 @@ class Home extends Component {
               mi, id condimentum sem elit sed purus. Aenean faucibus neque eu
               ante dapibus, ullamcorper finibus risus porttitor.
             </p>
-            <Link to="/" className="btn-3">
+            <Link to="/" className="btn-2">
               Log in
             </Link>
           </div>
@@ -135,7 +130,7 @@ class Home extends Component {
             non neque nec, fringilla consequat massa. Donec porttitor justo vel
             elementum sagittis.
           </p>
-          <Link to="/contact-us" className="btn-4">
+          <Link to="/contact-us" className="btn-3">
             Contact us
           </Link>
         </div>

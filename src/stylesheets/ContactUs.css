@@ -59,7 +59,7 @@ textarea {
   font-size: 15px;
 }
 
-#add-num-btn {
+.add-num-btn {
   width: 100%;
   text-decoration: none;
   background-color: rgb(193, 227, 247);
@@ -71,7 +71,7 @@ textarea {
   outline: none;
 }
 
-#add-num-btn:hover {
+.add-num-btn:hover {
   cursor: pointer;
 }
 

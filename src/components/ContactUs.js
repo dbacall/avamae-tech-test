@@ -135,7 +135,7 @@ class ContactUs extends Component {
                   />
                 </>
               ) : null}
-              <button id="add-num-btn" onClick={this.clickHandler}>
+              <button className="add-num-btn" onClick={this.clickHandler}>
                 Add new phone number
               </button>
               <label for="fname">Company Name</label>
