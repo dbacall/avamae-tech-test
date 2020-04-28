@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "../stylesheets/Home.css";
-// import "react-id-swiper/lib/styles/css/swiper.css";
 import Swiper from "react-id-swiper";
 import ReactLoading from "react-loading";
 import { Link } from "react-router-dom";

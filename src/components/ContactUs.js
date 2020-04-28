@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "../stylesheets/ContactUs.css";
-import BackgroundLogo from "../assets/Img_Contact.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
@@ -65,19 +64,6 @@ class ContactUs extends Component {
     }
   }
 
-  renderErrors = () => {
-    if (this.props.response.length > 0) {
-      if (this.props.response.data.Errors.length > 0) {
-        console.log("here");
-        // console.log(
-        //   this.props.response.data.Errors.map((error) => error.FieldName).join(
-        //     ", "
-        //   ) + "is required!"
-        // );
-      }
-    }
-  };
-
   render() {
     return (
       <div className="contact-us">
@@ -95,7 +81,7 @@ class ContactUs extends Component {
             <form onSubmit={this.submitHandler}>
               <div className="two-input-container">
                 <div>
-                  <label for="fname">Full Name</label>
+                  <label>Full Name</label>
                   <input
                     type="text"
                     className="input inputs-2-left"
@@ -105,7 +91,7 @@ class ContactUs extends Component {
                   />
                 </div>
                 <div>
-                  <label for="fname">Email Address</label>
+                  <label>Email Address</label>
                   <input
                     type="text"
                     className="input inputs-2-right"
@@ -115,7 +101,9 @@ class ContactUs extends Component {
                   />
                 </div>
               </div>
-              <label for="fname">Phone Number 01 - optional</label>
+              <label>
+                Phone Number 01 <i className="greyed-out">- optional</i>
+              </label>
               <input
                 type="text"
                 className="input"
@@ -125,7 +113,9 @@ class ContactUs extends Component {
               />
               {this.state.addNewNumber ? (
                 <>
-                  <label for="fname">Phone Number 02 - optional</label>
+                  <label>
+                    Phone Number 02 <i className="greyed-out">- optional</i>
+                  </label>
                   <input
                     type="text"
                     className="input"
@@ -138,7 +128,7 @@ class ContactUs extends Component {
               <button className="add-num-btn" onClick={this.clickHandler}>
                 Add new phone number
               </button>
-              <label for="fname">Company Name</label>
+              <label>Company Name</label>
               <input
                 type="text"
                 className="input"
@@ -146,16 +136,20 @@ class ContactUs extends Component {
                 onChange={this.onChange}
                 value={this.state.CompanyName}
               />
-              <label for="fname">Message</label>
+              <label>Message</label>
+              <label className="msg-label">
+                Maximum text length is 500 characters
+              </label>
               <textarea
                 className="input text-area"
                 id="Message"
+                maxlength="500"
                 onChange={this.onChange}
                 value={this.state.Message}
                 cols="70"
                 rows="10"
               />
-              <label for="fname">
+              <label>
                 <b>Add address details</b>
               </label>
               <input
@@ -168,7 +162,7 @@ class ContactUs extends Component {
                 <div className="address-details">
                   <div className="two-input-container">
                     <div>
-                      <label for="fname">Address Line 1</label>
+                      <label>Address Line 1</label>
                       <input
                         type="text"
                         className="input inputs-2-left"
@@ -178,7 +172,9 @@ class ContactUs extends Component {
                       />
                     </div>
                     <div>
-                      <label for="fname">Address Line 2 - optional</label>
+                      <label>
+                        Address Line 2 <i className="greyed-out">- optional</i>
+                      </label>
                       <input
                         type="text"
                         className="input inputs-2-right"
@@ -190,7 +186,7 @@ class ContactUs extends Component {
                   </div>
                   <div className="four-input-container">
                     <div>
-                      <label for="fname">City/Town</label>
+                      <label>City/Town</label>
                       <input
                         type="text"
                         className="input inputs-4"
@@ -201,7 +197,7 @@ class ContactUs extends Component {
                     </div>
 
                     <div>
-                      <label for="fname">State/County</label>
+                      <label>State/County</label>
                       <input
                         type="text"
                         className="input inputs-4"
@@ -211,7 +207,7 @@ class ContactUs extends Component {
                       />
                     </div>
                     <div>
-                      <label for="fname">Postcode</label>
+                      <label>Postcode</label>
                       <input
                         type="text"
                         className="input inputs-4"
@@ -221,7 +217,7 @@ class ContactUs extends Component {
                       />
                     </div>
                     <div>
-                      <label for="fname">Country</label>
+                      <label>Country</label>
                       <input
                         type="text"
                         className="input inputs-4"

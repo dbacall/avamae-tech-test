@@ -16,7 +16,6 @@ class HomeContainer extends Component {
         "https://interview-assessment.api.avamae.co.uk/api/v1/home/banner-details"
       )
       .then((response) => {
-        console.log(response.data.Details);
         this.setState({
           bannerData: response.data.Details,
         });

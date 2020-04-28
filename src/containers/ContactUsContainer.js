@@ -17,11 +17,7 @@ class ContactUsContainer extends Component {
         answers
       )
       .then((response) => {
-        console.log(response);
         this.setState({ response });
-      })
-      .catch((error) => {
-        console.log(error);
       });
   };
 

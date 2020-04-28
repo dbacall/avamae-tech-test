@@ -19,6 +19,15 @@
   column-count: 2;
 }
 
+.greyed-out {
+  color: lightgray;
+}
+
+.msg-label {
+  float: right;
+  color: lightgray;
+}
+
 textarea {
   resize: none;
 }
