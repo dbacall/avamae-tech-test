@@ -117,7 +117,7 @@
 }
 
 .container3 {
-  height: 40vh;
+  height: 45vh;
 }
 
 .container3-titles {
@@ -150,6 +150,10 @@
   color: white;
 }
 
+.btn-1:hover {
+  background-color: rgb(116, 156, 216);
+}
+
 .btn-2 {
   text-decoration: none;
   background-color: rgba(47, 144, 201);
@@ -158,6 +162,10 @@
   font-size: 10px;
   font-weight: bold;
   color: white;
+}
+
+.btn-2:hover {
+  background-color: rgb(116, 156, 216);
 }
 
 .btn-3 {
@@ -170,6 +178,10 @@
   color: rgba(14, 89, 133);
 }
 
+.btn-3:hover {
+  background-color: lightgray;
+}
+
 .btn-4 {
   text-decoration: none;
   background-color: rgba(47, 144, 201);
@@ -180,6 +192,10 @@
   color: white;
   margin-left: 45vw;
   margin-top: 10vw;
+}
+
+.btn-4:hover {
+  background-color: rgb(116, 156, 216);
 }
 
 @media only screen and (max-width: 600px) {
@@ -256,7 +272,7 @@
     text-align: center;
   }
   .container3 {
-    height: 100vh;
+    height: 97vh;
   }
   .container3-titles {
     width: 90vw;
